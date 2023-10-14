@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.greeting {
+  font-size: 48px;
+  color: rgb(52, 38, 79);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main > div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div span {
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
+}
+
+.login-box .login {
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-box input[type="submit"] {
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  margin-bottom: 24px;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer .right {
+  display: flex;
+  flex-direction: row;
+}
+
+.todo {
+  position: relative;
+}
+.todo .title {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.todo .modal {
+  position: absolute;
+  top: 0;
+  transform: translate(0, -310px);
+  width: 400px;
+  height: 300px;
+  background: white;
+}
+
+.todo .modal .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.todo .modal .container form {
+  display: flex;
+  height: 40px;
+  padding: 4px;
+}
+
+.todo .modal .container form input[type="text"] {
+  flex: 1;
+}
+
+.weather {
+  position: absolute;
+  right: 0;
+}
+
+.weather span {
+  display: inline-block;
+  background: black;
+  margin-right: 24px;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
